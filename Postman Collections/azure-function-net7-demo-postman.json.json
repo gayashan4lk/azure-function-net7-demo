@@ -88,7 +88,7 @@
 						}
 					}
 				},
-				"url": "http://localhost:7004/api/todo"
+				"url": "{{base_url}}/api/todo"
 			},
 			"response": [
 				{
@@ -145,12 +145,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:7004/api/todo?pageNumber=1&pageSize=10",
-					"protocol": "http",
+					"raw": "{{base_url}}/api/todo?pageNumber=1&pageSize=10",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "7004",
 					"path": [
 						"api",
 						"todo"
@@ -158,13 +156,11 @@
 					"query": [
 						{
 							"key": "pageNumber",
-							"value": "1",
-							"type": "text"
+							"value": "1"
 						},
 						{
 							"key": "pageSize",
-							"value": "10",
-							"type": "text"
+							"value": "10"
 						}
 					]
 				}
