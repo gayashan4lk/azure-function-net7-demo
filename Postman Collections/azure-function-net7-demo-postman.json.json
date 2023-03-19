@@ -81,7 +81,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"TaskDescription\": \"Buy Fish\"\r\n}",
+					"raw": "{\r\n    \"TaskDescription\": \"Buy Fish\",\r\n    \"SubTasks\": [\r\n        {\r\n            \"SubTaskDescription\" : \"Find bait\"\r\n        },\r\n        {\r\n            \"SubTaskDescription\" : \"Find a hook\"\r\n        }\r\n    ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
