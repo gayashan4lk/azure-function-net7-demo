@@ -316,7 +316,22 @@
 				"header": [],
 				"url": "{{base_url}}/api/todo/20be101e-8f2b-4b26-8560-dd4f1f6d4130"
 			},
-			"response": []
+			"response": [
+				{
+					"id": "c491fe23-c93c-4ec8-b278-75fcd2ccf054",
+					"name": "delete todo",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{base_url}}/api/todo/20be101e-8f2b-4b26-8560-dd4f1f6d4130"
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"responseTime": null,
+					"body": null
+				}
+			]
 		},
 		{
 			"name": "delete customer",
