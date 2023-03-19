@@ -23,52 +23,9 @@
 						}
 					}
 				},
-				"url": "http://localhost:7004/api/customer"
+				"url": "{{base_url}}/api/customer"
 			},
-			"response": [
-				{
-					"id": "32ba2663-dd7a-4bb8-9e95-54b8bb526712",
-					"name": "create customer",
-					"originalRequest": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"FirstName\": \"Harry\",\r\n    \"LastName\": \"Potter\",\r\n    \"Email\": \"Harry@gmail.com\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "http://localhost:7004/api/customer"
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 19 Mar 2023 14:37:02 GMT"
-						},
-						{
-							"key": "Server",
-							"value": "Kestrel"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n    \"CustomerId\": \"ae848428-6a02-459b-ad58-34ab3b569522\",\n    \"FirstName\": \"Harry\",\n    \"LastName\": \"Potter\",\n    \"Email\": \"Harry@gmail.com\",\n    \"Id\": \"b86e2121-b83f-46bc-a2a1-0de6a5448156\",\n    \"Type\": \"Customer\"\n}"
-				}
-			]
+			"response": []
 		},
 		{
 			"name": "create todo",
@@ -88,7 +45,7 @@
 						}
 					}
 				},
-				"url": "http://localhost:7004/api/todo"
+				"url": "{{base_url}}/api/todo"
 			},
 			"response": [
 				{
