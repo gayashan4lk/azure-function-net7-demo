@@ -329,7 +329,37 @@
 				"header": [],
 				"url": "{{base_url}}/api/customer/f0994f6c-5400-449f-b629-8b57b3fa210b"
 			},
-			"response": []
+			"response": [
+				{
+					"id": "cdb8179c-aacf-4cee-840c-173a8667ac61",
+					"name": "delete customer",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{base_url}}/api/customer/f0994f6c-5400-449f-b629-8b57b3fa210b"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 19 Mar 2023 20:21:07 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": null
+				}
+			]
 		}
 	]
 }
