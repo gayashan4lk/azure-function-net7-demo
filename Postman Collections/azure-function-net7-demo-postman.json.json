@@ -386,7 +386,16 @@
 			"request": {
 				"method": "PUT",
 				"header": [],
-				"url": "{{base_url}}/api/customer/{id}",
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"FirstName\": \"San\",\r\n        \"LastName\": \"Diago\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{base_url}}/api/customer/00537897-da8a-48f2-b314-710fd8d270a7",
 				"description": "api/customer/{id}"
 			},
 			"response": []
