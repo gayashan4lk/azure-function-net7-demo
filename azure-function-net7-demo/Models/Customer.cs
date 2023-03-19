@@ -10,8 +10,8 @@ namespace azure_function_net7_demo.Models
     public class Customer : Item
     {
         public Guid CustomerId { get; set; } = Guid.NewGuid();
-        public string FirstName { get; set; } = String.Empty;
+        public string FirstName { get; set; } = string.Empty;
         public string? LastName { get; set; }
-        public string Email { get; set; } = String.Empty;
+        public string Email { get; set; } = string.Empty;
     }
 }

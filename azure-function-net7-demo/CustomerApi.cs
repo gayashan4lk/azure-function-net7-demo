@@ -34,10 +34,6 @@ namespace azure_function_net7_demo
                 await response.WriteAsJsonAsync(created);
             }
 
-            //response.Headers.Add("Content-Type", "text/plain; charset=utf-8");
-
-            //response.WriteString("Welcome to Azure Functions!");
-
             return response;
         }
     }
