@@ -24,16 +24,17 @@ namespace azure_function_net7_demo.Api.CustomerApi
         {
             _logger.LogInformation("Customer Api function processed a http request.");
 
-            var customer = await JsonSerializer.DeserializeAsync<Customer>(req.Body);
+            var newCustomer = await JsonSerializer.DeserializeAsync<Customer>(req.Body);
 
             var response = req.CreateResponse(HttpStatusCode.OK);
 
-            if (customer != null)
-            {
-                var created = await customerRepository.CreateAsync(customer);
-                await response.WriteAsJsonAsync(created);
-            }
+            if(newCustomer == null) return req.CreateResponse(HttpStatusCode.BadRequest);
 
+            var existingCustomer = await customerRepository.GetAsync(x => x.Email == newCustomer.Email);
+            if(existingCustomer != null) return req.CreateResponse(HttpStatusCode.Conflict);
+
+            var created = await customerRepository.CreateAsync(newCustomer);
+            await response.WriteAsJsonAsync(created);
             return response;
         }
     }
