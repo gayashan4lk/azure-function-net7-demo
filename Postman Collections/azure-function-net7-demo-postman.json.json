@@ -7,7 +7,7 @@
 	"item": [
 		{
 			"name": "create customer",
-			"_postman_id": "82c9385b-8526-414c-a08e-bc78c52aa634",
+			"id": "82c9385b-8526-414c-a08e-bc78c52aa634",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -72,7 +72,7 @@
 		},
 		{
 			"name": "create todo",
-			"_postman_id": "49379653-859a-423b-98ae-9e19594e85eb",
+			"id": "49379653-859a-423b-98ae-9e19594e85eb",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -137,7 +137,7 @@
 		},
 		{
 			"name": "get todos",
-			"_postman_id": "d08ca269-25ae-4cec-8955-083c01218eec",
+			"id": "d08ca269-25ae-4cec-8955-083c01218eec",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -225,6 +225,42 @@
 					"body": "[\n    {\n        \"TodoId\": \"cf972fb9-9141-4c3a-9126-1ab49c5162fe\",\n        \"CreatedTime\": \"2023-03-19T12:12:01.1882948Z\",\n        \"TaskDescription\": \"Buy Bananas\",\n        \"IsCompleted\": false,\n        \"Id\": \"d2694dc8-83eb-4091-9663-dd7be314d665\",\n        \"Type\": \"Todo\"\n    },\n    {\n        \"TodoId\": \"3240b25d-2cd7-4d1c-9928-54d76d9a54ca\",\n        \"CreatedTime\": \"2023-03-19T12:13:24.8274503Z\",\n        \"TaskDescription\": \"Go for a walk\",\n        \"IsCompleted\": false,\n        \"Id\": \"e1879eda-5589-447e-9488-0c3db1717564\",\n        \"Type\": \"Todo\"\n    },\n    {\n        \"TodoId\": \"e02bfda5-d3ea-4e98-a7f4-a5bb1e0978a9\",\n        \"CreatedTime\": \"2023-03-19T13:34:56.5353598Z\",\n        \"TaskDescription\": \"Get milk\",\n        \"IsCompleted\": false,\n        \"Id\": \"44c87669-b0ce-4105-a55c-1d6854ff20f2\",\n        \"Type\": \"Todo\"\n    },\n    {\n        \"TodoId\": \"7438b1f4-5e4e-43d0-adde-d850c8c50278\",\n        \"CreatedTime\": \"2023-03-19T13:35:24.4789632Z\",\n        \"TaskDescription\": \"Buy Chicken\",\n        \"IsCompleted\": false,\n        \"Id\": \"20be101e-8f2b-4b26-8560-dd4f1f6d4130\",\n        \"Type\": \"Todo\"\n    },\n    {\n        \"TodoId\": \"2d1b0298-85e5-4dff-9b38-04b31fa0d4ec\",\n        \"CreatedTime\": \"2023-03-19T13:35:40.1246914Z\",\n        \"TaskDescription\": \"Buy Fish\",\n        \"IsCompleted\": false,\n        \"Id\": \"8e67f051-d310-40a1-b406-97c9663c7e4b\",\n        \"Type\": \"Todo\"\n    }\n]"
 				}
 			]
+		},
+		{
+			"name": "get customers",
+			"id": "987d0b90-f0f0-4e7c-88a5-d5872ec4f93d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7004/api/customer?pageNumber=1&pageSize=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7004",
+					"path": [
+						"api",
+						"customer"
+					],
+					"query": [
+						{
+							"key": "pageNumber",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "pageSize",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
