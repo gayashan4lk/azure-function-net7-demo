@@ -90,7 +90,50 @@
 				},
 				"url": "{{base_url}}/api/todo"
 			},
-			"response": []
+			"response": [
+				{
+					"id": "85c4d9ca-ccfb-400d-8086-5c75db37fef8",
+					"name": "create todo",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"TaskDescription\": \"Buy Fish\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}/api/todo"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 19 Mar 2023 15:26:11 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"TodoId\": \"28318bb3-f090-4321-81dc-feee151be3d4\",\n    \"CreatedTime\": \"2023-03-19T15:26:12.3497631Z\",\n    \"TaskDescription\": \"Buy Fish\",\n    \"IsCompleted\": false,\n    \"Id\": \"f22aba9c-7e32-469e-9ef1-701ad1364f76\",\n    \"Type\": \"Todo\"\n}"
+				}
+			]
 		},
 		{
 			"name": "get todos",
