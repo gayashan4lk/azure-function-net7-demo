@@ -1,12 +1,12 @@
 using System.Net;
-using azure_function_net7_demo.Models;
+using azure_function_net7_demo.Models.TodoModel;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Azure.CosmosRepository;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Azure.Functions.Worker.Http;
 using Microsoft.Extensions.Logging;
 
-namespace azure_function_net7_demo.Api
+namespace azure_function_net7_demo.Api.TodoApi
 {
     public class GetTodos
     {

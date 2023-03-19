@@ -1,12 +1,12 @@
 using System.Net;
 using System.Text.Json;
-using azure_function_net7_demo.Models;
+using azure_function_net7_demo.Models.TodoModel;
 using Microsoft.Azure.CosmosRepository;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Azure.Functions.Worker.Http;
 using Microsoft.Extensions.Logging;
 
-namespace azure_function_net7_demo.Api
+namespace azure_function_net7_demo.Api.TodoApi
 {
     public class CreateTodo
     {
@@ -34,6 +34,6 @@ namespace azure_function_net7_demo.Api
             return response;
         }
 
-        
+
     }
 }

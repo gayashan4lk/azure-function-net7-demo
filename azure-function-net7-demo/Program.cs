@@ -1,4 +1,4 @@
-using azure_function_net7_demo.Models;
+using azure_function_net7_demo.Models.CustomerModel;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 

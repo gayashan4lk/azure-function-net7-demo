@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace azure_function_net7_demo.Models
+namespace azure_function_net7_demo.Models.CustomerModel
 {
     public class Customer : Item
     {
