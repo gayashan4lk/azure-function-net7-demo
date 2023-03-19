@@ -90,7 +90,50 @@
 				},
 				"url": "{{base_url}}/api/todo"
 			},
-			"response": []
+			"response": [
+				{
+					"id": "f3b03c58-1673-4350-8356-4fc122684837",
+					"name": "create todo",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"TaskDescription\": \"Buy Fish\",\r\n    \"SubTasks\": [\r\n        {\r\n            \"SubTaskDescription\" : \"Find bait\"\r\n        },\r\n        {\r\n            \"SubTaskDescription\" : \"Find a hook\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}/api/todo"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 19 Mar 2023 17:29:38 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"CreatedTime\": \"2023-03-19T17:29:39.2533374Z\",\n    \"TaskDescription\": \"Buy Fish\",\n    \"IsCompleted\": false,\n    \"SubTasks\": [\n        {\n            \"SubTaskDescription\": \"Find bait\",\n            \"CreatedOn\": \"2023-03-19T17:29:39.2574518Z\",\n            \"Id\": \"363d38e2-8c77-4ea1-9ee3-80d2c54b08bd\",\n            \"Type\": \"SubTask\"\n        },\n        {\n            \"SubTaskDescription\": \"Find a hook\",\n            \"CreatedOn\": \"2023-03-19T17:29:39.2577683Z\",\n            \"Id\": \"7a7c5f87-3f8c-4c6b-b16e-30973da22d46\",\n            \"Type\": \"SubTask\"\n        }\n    ],\n    \"Id\": \"757b88f4-49f9-4df7-8a87-3b028e7ebf4c\",\n    \"Type\": \"Todo\"\n}"
+				}
+			]
 		},
 		{
 			"name": "get todos",
