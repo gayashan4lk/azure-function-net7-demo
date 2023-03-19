@@ -23,7 +23,7 @@
 						}
 					}
 				},
-				"url": "http://localhost:7004/api/customer"
+				"url": "{{base_url}}/api/customer"
 			},
 			"response": [
 				{
