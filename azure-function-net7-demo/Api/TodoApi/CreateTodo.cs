@@ -33,7 +33,5 @@ namespace azure_function_net7_demo.Api.TodoApi
             await response.WriteAsJsonAsync(created);
             return response;
         }
-
-
     }
 }
