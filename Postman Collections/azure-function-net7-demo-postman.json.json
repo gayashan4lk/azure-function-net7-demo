@@ -79,62 +79,7 @@
 					]
 				}
 			},
-			"response": [
-				{
-					"id": "7a7a6d6e-f70c-4fd6-8a58-dbf946265041",
-					"name": "get todos",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:7004/api/todo?pageNumber=1&pageSize=10",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "7004",
-							"path": [
-								"api",
-								"todo"
-							],
-							"query": [
-								{
-									"key": "pageNumber",
-									"value": "1"
-								},
-								{
-									"key": "pageSize",
-									"value": "10"
-								}
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 19 Mar 2023 14:36:16 GMT"
-						},
-						{
-							"key": "Server",
-							"value": "Kestrel"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "[\n    {\n        \"TodoId\": \"cf972fb9-9141-4c3a-9126-1ab49c5162fe\",\n        \"CreatedTime\": \"2023-03-19T12:12:01.1882948Z\",\n        \"TaskDescription\": \"Buy Bananas\",\n        \"IsCompleted\": false,\n        \"Id\": \"d2694dc8-83eb-4091-9663-dd7be314d665\",\n        \"Type\": \"Todo\"\n    },\n    {\n        \"TodoId\": \"3240b25d-2cd7-4d1c-9928-54d76d9a54ca\",\n        \"CreatedTime\": \"2023-03-19T12:13:24.8274503Z\",\n        \"TaskDescription\": \"Go for a walk\",\n        \"IsCompleted\": false,\n        \"Id\": \"e1879eda-5589-447e-9488-0c3db1717564\",\n        \"Type\": \"Todo\"\n    },\n    {\n        \"TodoId\": \"e02bfda5-d3ea-4e98-a7f4-a5bb1e0978a9\",\n        \"CreatedTime\": \"2023-03-19T13:34:56.5353598Z\",\n        \"TaskDescription\": \"Get milk\",\n        \"IsCompleted\": false,\n        \"Id\": \"44c87669-b0ce-4105-a55c-1d6854ff20f2\",\n        \"Type\": \"Todo\"\n    },\n    {\n        \"TodoId\": \"7438b1f4-5e4e-43d0-adde-d850c8c50278\",\n        \"CreatedTime\": \"2023-03-19T13:35:24.4789632Z\",\n        \"TaskDescription\": \"Buy Chicken\",\n        \"IsCompleted\": false,\n        \"Id\": \"20be101e-8f2b-4b26-8560-dd4f1f6d4130\",\n        \"Type\": \"Todo\"\n    },\n    {\n        \"TodoId\": \"2d1b0298-85e5-4dff-9b38-04b31fa0d4ec\",\n        \"CreatedTime\": \"2023-03-19T13:35:40.1246914Z\",\n        \"TaskDescription\": \"Buy Fish\",\n        \"IsCompleted\": false,\n        \"Id\": \"8e67f051-d310-40a1-b406-97c9663c7e4b\",\n        \"Type\": \"Todo\"\n    }\n]"
-				}
-			]
+			"response": []
 		},
 		{
 			"name": "get customers",
