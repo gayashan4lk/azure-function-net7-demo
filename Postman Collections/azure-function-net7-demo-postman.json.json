@@ -317,6 +317,19 @@
 				"url": "{{base_url}}/api/todo/20be101e-8f2b-4b26-8560-dd4f1f6d4130"
 			},
 			"response": []
+		},
+		{
+			"name": "delete customer",
+			"id": "02fc119d-6b0e-44ec-8c12-ce04cfb4b64c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "{{base_url}}/api/customer/f0994f6c-5400-449f-b629-8b57b3fa210b"
+			},
+			"response": []
 		}
 	]
 }
