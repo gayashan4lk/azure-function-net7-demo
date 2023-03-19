@@ -250,7 +250,60 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "2502c038-ba36-483e-83be-69ab92eb4097",
+					"name": "get customers",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/customer?pageNumber=1&pageSize=10",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"customer"
+							],
+							"query": [
+								{
+									"key": "pageNumber",
+									"value": "1"
+								},
+								{
+									"key": "pageSize",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 19 Mar 2023 17:30:57 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "[\n    {\n        \"FirstName\": \"Johnny\",\n        \"LastName\": \"Depp\",\n        \"Email\": \"Johnny@gmail.com\",\n        \"Id\": \"00537897-da8a-48f2-b314-710fd8d270a7\",\n        \"Type\": \"Customer\"\n    },\n    {\n        \"FirstName\": \"Harry\",\n        \"LastName\": \"Potter\",\n        \"Email\": \"Harry@gmail.com\",\n        \"Id\": \"f0994f6c-5400-449f-b629-8b57b3fa210b\",\n        \"Type\": \"Customer\"\n    },\n    {\n        \"FirstName\": \"Harry\",\n        \"LastName\": \"Potter\",\n        \"Email\": \"Harry@gmail.com\",\n        \"Id\": \"b86e2121-b83f-46bc-a2a1-0de6a5448156\",\n        \"Type\": \"Customer\"\n    },\n    {\n        \"FirstName\": \"Harry\",\n        \"LastName\": \"Potter\",\n        \"Email\": \"Harry@gmail.com\",\n        \"Id\": \"3f9950c3-764e-4fe3-9422-21afac1ecb7c\",\n        \"Type\": \"Customer\"\n    },\n    {\n        \"FirstName\": \"Harry\",\n        \"LastName\": \"Potter\",\n        \"Email\": \"Harry@gmail.com\",\n        \"Id\": \"d3d36461-1338-482c-a46c-fdb76540c130\",\n        \"Type\": \"Customer\"\n    },\n    {\n        \"FirstName\": \"Ron\",\n        \"LastName\": \"Weisly\",\n        \"Email\": \"Ron@gmail.com\",\n        \"Id\": \"6369cdb8-f117-42b3-abae-7bc5dcd9e380\",\n        \"Type\": \"Customer\"\n    }\n]"
+				}
+			]
 		},
 		{
 			"name": "delete todo",
