@@ -5,6 +5,8 @@ VisualStudioVersion = 17.6.33513.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "azure-function-net7-demo", "azure-function-net7-demo\azure-function-net7-demo.csproj", "{EE6E76C0-F7FF-42D6-B401-2F1A141CBC36}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "azure-function-net7-demo.test", "azure-function-net7-demo.test\azure-function-net7-demo.test.csproj", "{E16DBE7A-0ADD-4641-A1C1-5CBFEC48B8ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EE6E76C0-F7FF-42D6-B401-2F1A141CBC36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE6E76C0-F7FF-42D6-B401-2F1A141CBC36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE6E76C0-F7FF-42D6-B401-2F1A141CBC36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E16DBE7A-0ADD-4641-A1C1-5CBFEC48B8ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E16DBE7A-0ADD-4641-A1C1-5CBFEC48B8ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E16DBE7A-0ADD-4641-A1C1-5CBFEC48B8ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E16DBE7A-0ADD-4641-A1C1-5CBFEC48B8ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
