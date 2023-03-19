@@ -442,6 +442,20 @@
 					"body": "{\n    \"FirstName\": \"San\",\n    \"LastName\": \"Diago\",\n    \"Email\": \"Johnny@gmail.com\",\n    \"Id\": \"00537897-da8a-48f2-b314-710fd8d270a7\",\n    \"Type\": \"Customer\"\n}"
 				}
 			]
+		},
+		{
+			"name": "delete subTask",
+			"id": "8540b41c-2f91-40e3-a497-c8299e1b9f62",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "{{base_url}}/api/todo/{todoId}/{subTaskId}",
+				"description": "api/todo/{todoId}/{subTaskId}"
+			},
+			"response": []
 		}
 	]
 }
