@@ -236,12 +236,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:7004/api/customer?pageNumber=1&pageSize=10",
-					"protocol": "http",
+					"raw": "{{base_url}}/api/customer?pageNumber=1&pageSize=10",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "7004",
 					"path": [
 						"api",
 						"customer"
@@ -249,13 +247,11 @@
 					"query": [
 						{
 							"key": "pageNumber",
-							"value": "1",
-							"type": "text"
+							"value": "1"
 						},
 						{
 							"key": "pageSize",
-							"value": "10",
-							"type": "text"
+							"value": "10"
 						}
 					]
 				}
