@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace azure_function_net7_demo.Models.TodoModel
+namespace azure_function_net7_demo.Models
 {
     public class TodoCreateModel : Item
     {

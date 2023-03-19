@@ -1,6 +1,6 @@
 using System.Net;
 using System.Text.Json;
-using azure_function_net7_demo.Models.CustomerModel;
+using azure_function_net7_demo.Models;
 using Microsoft.Azure.CosmosRepository;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Azure.Functions.Worker.Http;

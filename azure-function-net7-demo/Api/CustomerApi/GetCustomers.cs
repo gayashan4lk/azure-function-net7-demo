@@ -1,5 +1,5 @@
 using System.Net;
-using azure_function_net7_demo.Models.CustomerModel;
+using azure_function_net7_demo.Models;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Azure.CosmosRepository;
 using Microsoft.Azure.Functions.Worker;

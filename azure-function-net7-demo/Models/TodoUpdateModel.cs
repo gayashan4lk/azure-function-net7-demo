@@ -5,12 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace azure_function_net7_demo.Models.TodoModel
+namespace azure_function_net7_demo.Models
 {
-    public class Todo : Item
+    public class TodoUpdateModel : Item
     {
-        public Guid TodoId { get; set; } = Guid.NewGuid();
-        public DateTime CreatedTime { get; set; } = DateTime.UtcNow;
         public string TaskDescription { get; set; } = string.Empty;
         public bool IsCompleted { get; set; } = false;
     }
