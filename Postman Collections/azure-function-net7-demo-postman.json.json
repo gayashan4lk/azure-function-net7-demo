@@ -25,7 +25,50 @@
 				},
 				"url": "{{base_url}}/api/customer"
 			},
-			"response": []
+			"response": [
+				{
+					"id": "536911a4-3c80-45bd-b072-d5e38194c96b",
+					"name": "create customer",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"FirstName\": \"Ron\",\r\n    \"LastName\": \"Weisly\",\r\n    \"Email\": \"Ron@gmail.com\"    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}/api/customer"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 19 Mar 2023 15:26:00 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"CustomerId\": \"90b1ccba-1aac-44c5-9dd0-8826a98ed7bb\",\n    \"FirstName\": \"Ron\",\n    \"LastName\": \"Weisly\",\n    \"Email\": \"Ron@gmail.com\",\n    \"Id\": \"6369cdb8-f117-42b3-abae-7bc5dcd9e380\",\n    \"Type\": \"Customer\"\n}"
+				}
+			]
 		},
 		{
 			"name": "create todo",
