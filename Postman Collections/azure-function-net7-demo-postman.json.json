@@ -376,6 +376,20 @@
 					"body": null
 				}
 			]
+		},
+		{
+			"name": "update customer",
+			"id": "8e225fbd-2524-44ac-8402-9aa3f2f9a163",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "{{base_url}}/api/customer/{id}",
+				"description": "api/customer/{id}"
+			},
+			"response": []
 		}
 	]
 }
