@@ -452,7 +452,7 @@
 			"request": {
 				"method": "DELETE",
 				"header": [],
-				"url": "{{base_url}}/api/todo/{todoId}/{subTaskId}",
+				"url": "{{base_url}}/api/todo/subTask/",
 				"description": "api/todo/{todoId}/{subTaskId}"
 			},
 			"response": []
