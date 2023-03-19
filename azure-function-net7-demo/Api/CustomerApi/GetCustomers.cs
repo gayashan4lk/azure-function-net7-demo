@@ -1,28 +1,28 @@
 using System.Net;
-using azure_function_net7_demo.Models.TodoModel;
+using azure_function_net7_demo.Models.CustomerModel;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Azure.CosmosRepository;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Azure.Functions.Worker.Http;
 using Microsoft.Extensions.Logging;
 
-namespace azure_function_net7_demo.Api.TodoApi
+namespace azure_function_net7_demo.Api.CustomerApi
 {
-    public class GetTodos
+    public class GetCustomers
     {
         private readonly ILogger _logger;
-        private readonly IRepository<Todo> todoRepository;
+        private readonly IRepository<Customer> customerRepository;
 
-        public GetTodos(ILoggerFactory loggerFactory, IRepository<Todo> todoRepository)
+        public GetCustomers(ILoggerFactory loggerFactory, IRepository<Customer> customerRepository)
         {
-            _logger = loggerFactory.CreateLogger<GetTodos>();
-            this.todoRepository = todoRepository;
+            _logger = loggerFactory.CreateLogger<GetCustomers>();
+            this.customerRepository = customerRepository;
         }
 
-        [Function("GetTodos")]
-        public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "todo")] HttpRequestData req)
+        [Function("GetCustomers")]
+        public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "customer")] HttpRequestData req)
         {
-            _logger.LogInformation("Getting todos");
+            _logger.LogInformation("Getting customers");
 
             var queryDictionary = QueryHelpers.ParseQuery(req.Url.Query);
             var pageNumber = queryDictionary["pageNumber"];
@@ -40,10 +40,10 @@ namespace azure_function_net7_demo.Api.TodoApi
                 return req.CreateResponse(HttpStatusCode.BadRequest);
             }
 
-            var todos = await todoRepository.PageAsync(pageNumber: page, pageSize: size);
+            var customers = await customerRepository.PageAsync(pageNumber: page, pageSize: size);
 
             var response = req.CreateResponse(HttpStatusCode.OK);
-            await response.WriteAsJsonAsync(todos.Items);
+            await response.WriteAsJsonAsync(customers.Items);
             return response;
         }
     }
