@@ -26,8 +26,7 @@ namespace azure_function_net7_demo.Api.TodoApi
 
             if(string.IsNullOrEmpty(id)) return req.CreateResponse(HttpStatusCode.BadRequest);
 
-            var todo = await repository.GetAsync(id!);
-
+            var todo = await repository.GetAsync(id);
             if(todo == null) return req.CreateResponse(HttpStatusCode.BadRequest);
 
             await repository.DeleteAsync(todo);
