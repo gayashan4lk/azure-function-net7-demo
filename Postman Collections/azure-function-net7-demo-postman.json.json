@@ -1,0 +1,230 @@
+{
+	"info": {
+		"_postman_id": "70a6be1f-a802-444b-a65f-170a2151be0f",
+		"name": "azure-function-net7-demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create customer",
+			"_postman_id": "82c9385b-8526-414c-a08e-bc78c52aa634",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"FirstName\": \"Harry\",\r\n    \"LastName\": \"Potter\",\r\n    \"Email\": \"Harry@gmail.com\"    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:7004/api/customer"
+			},
+			"response": [
+				{
+					"id": "32ba2663-dd7a-4bb8-9e95-54b8bb526712",
+					"name": "create customer",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"FirstName\": \"Harry\",\r\n    \"LastName\": \"Potter\",\r\n    \"Email\": \"Harry@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:7004/api/customer"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 19 Mar 2023 14:37:02 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"CustomerId\": \"ae848428-6a02-459b-ad58-34ab3b569522\",\n    \"FirstName\": \"Harry\",\n    \"LastName\": \"Potter\",\n    \"Email\": \"Harry@gmail.com\",\n    \"Id\": \"b86e2121-b83f-46bc-a2a1-0de6a5448156\",\n    \"Type\": \"Customer\"\n}"
+				}
+			]
+		},
+		{
+			"name": "create todo",
+			"_postman_id": "49379653-859a-423b-98ae-9e19594e85eb",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"TaskDescription\": \"Buy Fish\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:7004/api/todo"
+			},
+			"response": [
+				{
+					"id": "ed305871-b188-44fd-bffb-ced807a62164",
+					"name": "create todo",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"TaskDescription\": \"Buy Fish\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:7004/api/todo"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 19 Mar 2023 13:35:39 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"TodoId\": \"2d1b0298-85e5-4dff-9b38-04b31fa0d4ec\",\n    \"CreatedTime\": \"2023-03-19T13:35:40.1246914Z\",\n    \"TaskDescription\": \"Buy Fish\",\n    \"IsCompleted\": false,\n    \"Id\": \"8e67f051-d310-40a1-b406-97c9663c7e4b\",\n    \"Type\": \"Todo\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get todos",
+			"_postman_id": "d08ca269-25ae-4cec-8955-083c01218eec",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7004/api/todo?pageNumber=1&pageSize=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7004",
+					"path": [
+						"api",
+						"todo"
+					],
+					"query": [
+						{
+							"key": "pageNumber",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "pageSize",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "7a7a6d6e-f70c-4fd6-8a58-dbf946265041",
+					"name": "get todos",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7004/api/todo?pageNumber=1&pageSize=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7004",
+							"path": [
+								"api",
+								"todo"
+							],
+							"query": [
+								{
+									"key": "pageNumber",
+									"value": "1"
+								},
+								{
+									"key": "pageSize",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 19 Mar 2023 14:36:16 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "[\n    {\n        \"TodoId\": \"cf972fb9-9141-4c3a-9126-1ab49c5162fe\",\n        \"CreatedTime\": \"2023-03-19T12:12:01.1882948Z\",\n        \"TaskDescription\": \"Buy Bananas\",\n        \"IsCompleted\": false,\n        \"Id\": \"d2694dc8-83eb-4091-9663-dd7be314d665\",\n        \"Type\": \"Todo\"\n    },\n    {\n        \"TodoId\": \"3240b25d-2cd7-4d1c-9928-54d76d9a54ca\",\n        \"CreatedTime\": \"2023-03-19T12:13:24.8274503Z\",\n        \"TaskDescription\": \"Go for a walk\",\n        \"IsCompleted\": false,\n        \"Id\": \"e1879eda-5589-447e-9488-0c3db1717564\",\n        \"Type\": \"Todo\"\n    },\n    {\n        \"TodoId\": \"e02bfda5-d3ea-4e98-a7f4-a5bb1e0978a9\",\n        \"CreatedTime\": \"2023-03-19T13:34:56.5353598Z\",\n        \"TaskDescription\": \"Get milk\",\n        \"IsCompleted\": false,\n        \"Id\": \"44c87669-b0ce-4105-a55c-1d6854ff20f2\",\n        \"Type\": \"Todo\"\n    },\n    {\n        \"TodoId\": \"7438b1f4-5e4e-43d0-adde-d850c8c50278\",\n        \"CreatedTime\": \"2023-03-19T13:35:24.4789632Z\",\n        \"TaskDescription\": \"Buy Chicken\",\n        \"IsCompleted\": false,\n        \"Id\": \"20be101e-8f2b-4b26-8560-dd4f1f6d4130\",\n        \"Type\": \"Todo\"\n    },\n    {\n        \"TodoId\": \"2d1b0298-85e5-4dff-9b38-04b31fa0d4ec\",\n        \"CreatedTime\": \"2023-03-19T13:35:40.1246914Z\",\n        \"TaskDescription\": \"Buy Fish\",\n        \"IsCompleted\": false,\n        \"Id\": \"8e67f051-d310-40a1-b406-97c9663c7e4b\",\n        \"Type\": \"Todo\"\n    }\n]"
+				}
+			]
+		}
+	]
+}
