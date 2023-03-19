@@ -398,7 +398,50 @@
 				"url": "{{base_url}}/api/customer/00537897-da8a-48f2-b314-710fd8d270a7",
 				"description": "api/customer/{id}"
 			},
-			"response": []
+			"response": [
+				{
+					"id": "1621e78b-7823-4893-ab59-c0e8a3e5a5ea",
+					"name": "update customer",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"FirstName\": \"San\",\r\n        \"LastName\": \"Diago\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}/api/customer/00537897-da8a-48f2-b314-710fd8d270a7"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 19 Mar 2023 20:57:23 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"FirstName\": \"San\",\n    \"LastName\": \"Diago\",\n    \"Email\": \"Johnny@gmail.com\",\n    \"Id\": \"00537897-da8a-48f2-b314-710fd8d270a7\",\n    \"Type\": \"Customer\"\n}"
+				}
+			]
 		}
 	]
 }
