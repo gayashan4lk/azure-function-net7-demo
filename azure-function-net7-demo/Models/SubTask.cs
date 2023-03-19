@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 
 namespace azure_function_net7_demo.Models
 {
-    public class Customer : Item
+    public class SubTask : Item
     {
-        public string FirstName { get; set; } = string.Empty;
-        public string? LastName { get; set; }
-        public string Email { get; set; } = string.Empty;
+        public string SubTaskDescription { get; set; } = string.Empty;
+        public DateTime CreatedOn { get; set; } = DateTime.UtcNow;
     }
 }
