@@ -304,6 +304,19 @@
 					"body": "[\n    {\n        \"CustomerId\": \"a65854b2-8737-4cba-b6dc-8240a9063174\",\n        \"FirstName\": \"Johnny\",\n        \"LastName\": \"Depp\",\n        \"Email\": \"Johnny@gmail.com\",\n        \"Id\": \"00537897-da8a-48f2-b314-710fd8d270a7\",\n        \"Type\": \"Customer\"\n    },\n    {\n        \"CustomerId\": \"208e39c2-de85-42b6-9dbe-86b006fc5601\",\n        \"FirstName\": \"Harry\",\n        \"LastName\": \"Potter\",\n        \"Email\": \"Harry@gmail.com\",\n        \"Id\": \"f0994f6c-5400-449f-b629-8b57b3fa210b\",\n        \"Type\": \"Customer\"\n    },\n    {\n        \"CustomerId\": \"ae848428-6a02-459b-ad58-34ab3b569522\",\n        \"FirstName\": \"Harry\",\n        \"LastName\": \"Potter\",\n        \"Email\": \"Harry@gmail.com\",\n        \"Id\": \"b86e2121-b83f-46bc-a2a1-0de6a5448156\",\n        \"Type\": \"Customer\"\n    },\n    {\n        \"CustomerId\": \"8f90ff74-02b1-4692-946a-f80ac4bab0b7\",\n        \"FirstName\": \"Harry\",\n        \"LastName\": \"Potter\",\n        \"Email\": \"Harry@gmail.com\",\n        \"Id\": \"3f9950c3-764e-4fe3-9422-21afac1ecb7c\",\n        \"Type\": \"Customer\"\n    },\n    {\n        \"CustomerId\": \"38ab3a76-4e69-45b5-b4e3-e59cb9abd28a\",\n        \"FirstName\": \"Harry\",\n        \"LastName\": \"Potter\",\n        \"Email\": \"Harry@gmail.com\",\n        \"Id\": \"d3d36461-1338-482c-a46c-fdb76540c130\",\n        \"Type\": \"Customer\"\n    },\n    {\n        \"CustomerId\": \"90b1ccba-1aac-44c5-9dd0-8826a98ed7bb\",\n        \"FirstName\": \"Ron\",\n        \"LastName\": \"Weisly\",\n        \"Email\": \"Ron@gmail.com\",\n        \"Id\": \"6369cdb8-f117-42b3-abae-7bc5dcd9e380\",\n        \"Type\": \"Customer\"\n    }\n]"
 				}
 			]
+		},
+		{
+			"name": "delete todo",
+			"id": "c628c70f-6a71-4dfa-9ef9-a0741ad48662",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{base_url}}/api/todo/{id}"
+			},
+			"response": []
 		}
 	]
 }
