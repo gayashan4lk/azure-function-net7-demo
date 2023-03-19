@@ -452,7 +452,7 @@
 			"request": {
 				"method": "DELETE",
 				"header": [],
-				"url": "{{base_url}}/api/todo/62dc4447-e2a3-48b6-b792-0abc5309bccc/6f5e03ff-3832-48c8-be8c-90e56bb4e97e",
+				"url": "{{base_url}}/api/todo/62dc4447-e2a3-48b6-b792-0abc5309bccc/subtask/4a0403b9-c877-46d6-9ca4-db588537952d",
 				"description": "api/todo/{todoId}/{subTaskId}"
 			},
 			"response": []
