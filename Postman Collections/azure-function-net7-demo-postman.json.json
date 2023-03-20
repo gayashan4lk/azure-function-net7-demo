@@ -217,7 +217,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"FirstName\": \"Ron\",\r\n    \"LastName\": \"Weisly\",\r\n    \"Email\": \"Ron@gmail.com\"\r\n}",
+							"raw": "{\r\n    \"FirstName\": \"Harry\",\r\n    \"LastName\": \"Potter\",\r\n    \"Email\": \"harry@gmail.com\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
