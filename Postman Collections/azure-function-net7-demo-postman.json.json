@@ -6,6 +6,11 @@
 	},
 	"item": [
 		{
+			"name": "New Folder",
+			"item": [],
+			"id": "ed202bb7-e494-4b34-b93f-f168bba69bfc"
+		},
+		{
 			"name": "create customer",
 			"id": "82c9385b-8526-414c-a08e-bc78c52aa634",
 			"protocolProfileBehavior": {
