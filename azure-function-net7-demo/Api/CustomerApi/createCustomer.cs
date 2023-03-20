@@ -20,7 +20,7 @@ namespace azure_function_net7_demo.Api.CustomerApi
         }
 
         [Function("CreateCustomer")]
-        public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Function, "post", Route = "customer")] HttpRequestData req)
+        public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = "customer")] HttpRequestData req)
         {
             _logger.LogInformation("Customer Api function processed a http request.");
 
