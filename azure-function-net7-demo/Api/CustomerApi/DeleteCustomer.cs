@@ -20,7 +20,7 @@ namespace azure_function_net7_demo.Api.CustomerApi
         }
 
         [Function("DeleteCustomer")]
-        public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Function, "delete", Route = "customer/{id}")] HttpRequestData req, string id)
+        public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Anonymous, "delete", Route = "customer/{id}")] HttpRequestData req, string id)
         {
             _logger.LogInformation("Deleting a customer.");
 

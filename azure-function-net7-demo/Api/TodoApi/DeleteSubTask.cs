@@ -20,7 +20,7 @@ namespace azure_function_net7_demo.Api.TodoApi
 
 
         [Function("DeleteSubTask")]
-        public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Function, "delete", Route = "todo/{todoId}/subtask/{subTaskId}")] HttpRequestData req, string todoId, string subTaskId)
+        public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Anonymous, "delete", Route = "todo/{todoId}/subtask/{subTaskId}")] HttpRequestData req, string todoId, string subTaskId)
         {
             _logger.LogInformation("Deleting a subTask.");
 

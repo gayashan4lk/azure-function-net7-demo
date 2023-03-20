@@ -20,7 +20,7 @@ namespace azure_function_net7_demo.Api.CustomerApi
         }
 
         [Function("UpdateCustomer")]
-        public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Function, "put", Route ="customer/{id}")] HttpRequestData req, string id)
+        public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Anonymous, "put", Route ="customer/{id}")] HttpRequestData req, string id)
         {
             _logger.LogInformation("Updating a customer.");
 
