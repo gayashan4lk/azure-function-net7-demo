@@ -28,7 +28,7 @@ namespace azure_function_net7_demo.Api.CustomerApi
             if (newCustomer == null) return req.CreateResponse(HttpStatusCode.BadRequest);
 
             var existingCustomer = await customerRepository.GetAsync(x => x.Email == newCustomer.Email);
-            if(existingCustomer != null) return req.CreateResponse(HttpStatusCode.Conflict);
+            if (existingCustomer.Any()) return req.CreateResponse(HttpStatusCode.Conflict);
             
             var created = await customerRepository.CreateAsync(newCustomer);
             var response = req.CreateResponse(HttpStatusCode.OK);
