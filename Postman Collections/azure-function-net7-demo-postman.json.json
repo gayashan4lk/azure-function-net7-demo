@@ -205,39 +205,25 @@
 		},
 		{
 			"name": "Customer",
-			"item": [],
-			"id": "1cdf2692-507b-4b98-bc48-ba7ae8d326d5"
-		},
-		{
-			"name": "create customer",
-			"id": "82c9385b-8526-414c-a08e-bc78c52aa634",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"FirstName\": \"Ron\",\r\n    \"LastName\": \"Weisly\",\r\n    \"Email\": \"Ron@gmail.com\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "{{base_url}}/api/customer"
-			},
-			"response": [
+			"item": [
 				{
-					"id": "536911a4-3c80-45bd-b072-d5e38194c96b",
 					"name": "create customer",
-					"originalRequest": {
+					"id": "82c9385b-8526-414c-a08e-bc78c52aa634",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "x-functions-key",
+								"value": "6eUgs4Qujuv_W3eHitECD9wvGTrvYHM58oBQw82gG3MLAzFuNZqNIA==",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"FirstName\": \"Ron\",\r\n    \"LastName\": \"Weisly\",\r\n    \"Email\": \"Ron@gmail.com\"    \r\n}",
+							"raw": "{\r\n    \"FirstName\": \"Harry\",\r\n    \"LastName\": \"Potter\",\r\n    \"Email\": \"Harry@gmail.com\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -246,68 +232,58 @@
 						},
 						"url": "{{base_url}}/api/customer"
 					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
+					"response": [
 						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 19 Mar 2023 15:26:00 GMT"
-						},
-						{
-							"key": "Server",
-							"value": "Kestrel"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n    \"CustomerId\": \"90b1ccba-1aac-44c5-9dd0-8826a98ed7bb\",\n    \"FirstName\": \"Ron\",\n    \"LastName\": \"Weisly\",\n    \"Email\": \"Ron@gmail.com\",\n    \"Id\": \"6369cdb8-f117-42b3-abae-7bc5dcd9e380\",\n    \"Type\": \"Customer\"\n}"
-				}
-			]
-		},
-		{
-			"name": "get customers",
-			"id": "987d0b90-f0f0-4e7c-88a5-d5872ec4f93d",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{base_url}}/api/customer?pageNumber=1&pageSize=10",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"api",
-						"customer"
-					],
-					"query": [
-						{
-							"key": "pageNumber",
-							"value": "1"
-						},
-						{
-							"key": "pageSize",
-							"value": "10"
+							"id": "536911a4-3c80-45bd-b072-d5e38194c96b",
+							"name": "create customer",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"FirstName\": \"Ron\",\r\n    \"LastName\": \"Weisly\",\r\n    \"Email\": \"Ron@gmail.com\"    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{base_url}}/api/customer"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Mar 2023 15:26:00 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"CustomerId\": \"90b1ccba-1aac-44c5-9dd0-8826a98ed7bb\",\n    \"FirstName\": \"Ron\",\n    \"LastName\": \"Weisly\",\n    \"Email\": \"Ron@gmail.com\",\n    \"Id\": \"6369cdb8-f117-42b3-abae-7bc5dcd9e380\",\n    \"Type\": \"Customer\"\n}"
 						}
 					]
-				}
-			},
-			"response": [
+				},
 				{
-					"id": "2502c038-ba36-483e-83be-69ab92eb4097",
 					"name": "get customers",
-					"originalRequest": {
+					"id": "987d0b90-f0f0-4e7c-88a5-d5872ec4f93d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
@@ -331,103 +307,112 @@
 							]
 						}
 					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
+					"response": [
 						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 19 Mar 2023 17:30:57 GMT"
-						},
-						{
-							"key": "Server",
-							"value": "Kestrel"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
+							"id": "2502c038-ba36-483e-83be-69ab92eb4097",
+							"name": "get customers",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/customer?pageNumber=1&pageSize=10",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"customer"
+									],
+									"query": [
+										{
+											"key": "pageNumber",
+											"value": "1"
+										},
+										{
+											"key": "pageSize",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Mar 2023 17:30:57 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "[\n    {\n        \"FirstName\": \"Johnny\",\n        \"LastName\": \"Depp\",\n        \"Email\": \"Johnny@gmail.com\",\n        \"Id\": \"00537897-da8a-48f2-b314-710fd8d270a7\",\n        \"Type\": \"Customer\"\n    },\n    {\n        \"FirstName\": \"Harry\",\n        \"LastName\": \"Potter\",\n        \"Email\": \"Harry@gmail.com\",\n        \"Id\": \"f0994f6c-5400-449f-b629-8b57b3fa210b\",\n        \"Type\": \"Customer\"\n    },\n    {\n        \"FirstName\": \"Harry\",\n        \"LastName\": \"Potter\",\n        \"Email\": \"Harry@gmail.com\",\n        \"Id\": \"b86e2121-b83f-46bc-a2a1-0de6a5448156\",\n        \"Type\": \"Customer\"\n    },\n    {\n        \"FirstName\": \"Harry\",\n        \"LastName\": \"Potter\",\n        \"Email\": \"Harry@gmail.com\",\n        \"Id\": \"3f9950c3-764e-4fe3-9422-21afac1ecb7c\",\n        \"Type\": \"Customer\"\n    },\n    {\n        \"FirstName\": \"Harry\",\n        \"LastName\": \"Potter\",\n        \"Email\": \"Harry@gmail.com\",\n        \"Id\": \"d3d36461-1338-482c-a46c-fdb76540c130\",\n        \"Type\": \"Customer\"\n    },\n    {\n        \"FirstName\": \"Ron\",\n        \"LastName\": \"Weisly\",\n        \"Email\": \"Ron@gmail.com\",\n        \"Id\": \"6369cdb8-f117-42b3-abae-7bc5dcd9e380\",\n        \"Type\": \"Customer\"\n    }\n]"
 						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "[\n    {\n        \"FirstName\": \"Johnny\",\n        \"LastName\": \"Depp\",\n        \"Email\": \"Johnny@gmail.com\",\n        \"Id\": \"00537897-da8a-48f2-b314-710fd8d270a7\",\n        \"Type\": \"Customer\"\n    },\n    {\n        \"FirstName\": \"Harry\",\n        \"LastName\": \"Potter\",\n        \"Email\": \"Harry@gmail.com\",\n        \"Id\": \"f0994f6c-5400-449f-b629-8b57b3fa210b\",\n        \"Type\": \"Customer\"\n    },\n    {\n        \"FirstName\": \"Harry\",\n        \"LastName\": \"Potter\",\n        \"Email\": \"Harry@gmail.com\",\n        \"Id\": \"b86e2121-b83f-46bc-a2a1-0de6a5448156\",\n        \"Type\": \"Customer\"\n    },\n    {\n        \"FirstName\": \"Harry\",\n        \"LastName\": \"Potter\",\n        \"Email\": \"Harry@gmail.com\",\n        \"Id\": \"3f9950c3-764e-4fe3-9422-21afac1ecb7c\",\n        \"Type\": \"Customer\"\n    },\n    {\n        \"FirstName\": \"Harry\",\n        \"LastName\": \"Potter\",\n        \"Email\": \"Harry@gmail.com\",\n        \"Id\": \"d3d36461-1338-482c-a46c-fdb76540c130\",\n        \"Type\": \"Customer\"\n    },\n    {\n        \"FirstName\": \"Ron\",\n        \"LastName\": \"Weisly\",\n        \"Email\": \"Ron@gmail.com\",\n        \"Id\": \"6369cdb8-f117-42b3-abae-7bc5dcd9e380\",\n        \"Type\": \"Customer\"\n    }\n]"
-				}
-			]
-		},
-		{
-			"name": "delete customer",
-			"id": "02fc119d-6b0e-44ec-8c12-ce04cfb4b64c",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": "{{base_url}}/api/customer/3f9950c3-764e-4fe3-9422-21afac1ecb7c",
-				"description": "Delete a customer  \n\napi/customer/{id}"
-			},
-			"response": [
+					]
+				},
 				{
-					"id": "cdb8179c-aacf-4cee-840c-173a8667ac61",
 					"name": "delete customer",
-					"originalRequest": {
+					"id": "02fc119d-6b0e-44ec-8c12-ce04cfb4b64c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{base_url}}/api/customer/f0994f6c-5400-449f-b629-8b57b3fa210b"
+						"url": "{{base_url}}/api/customer/3f9950c3-764e-4fe3-9422-21afac1ecb7c",
+						"description": "Delete a customer  \n\napi/customer/{id}"
 					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "plain",
-					"header": [
+					"response": [
 						{
-							"key": "Content-Length",
-							"value": "0"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 19 Mar 2023 20:21:07 GMT"
-						},
-						{
-							"key": "Server",
-							"value": "Kestrel"
+							"id": "cdb8179c-aacf-4cee-840c-173a8667ac61",
+							"name": "delete customer",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": "{{base_url}}/api/customer/f0994f6c-5400-449f-b629-8b57b3fa210b"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Mar 2023 20:21:07 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": null
 						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": null
-				}
-			]
-		},
-		{
-			"name": "update customer",
-			"id": "8e225fbd-2524-44ac-8402-9aa3f2f9a163",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n        \"FirstName\": \"San\",\r\n        \"LastName\": \"Diago\"\r\n    }",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
+					]
 				},
-				"url": "{{base_url}}/api/customer/00537897-da8a-48f2-b314-710fd8d270a7",
-				"description": "api/customer/{id}"
-			},
-			"response": [
 				{
-					"id": "1621e78b-7823-4893-ab59-c0e8a3e5a5ea",
 					"name": "update customer",
-					"originalRequest": {
+					"id": "8e225fbd-2524-44ac-8402-9aa3f2f9a163",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
 						"method": "PUT",
 						"header": [],
 						"body": {
@@ -439,34 +424,56 @@
 								}
 							}
 						},
-						"url": "{{base_url}}/api/customer/00537897-da8a-48f2-b314-710fd8d270a7"
+						"url": "{{base_url}}/api/customer/00537897-da8a-48f2-b314-710fd8d270a7",
+						"description": "api/customer/{id}"
 					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
+					"response": [
 						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 19 Mar 2023 20:57:23 GMT"
-						},
-						{
-							"key": "Server",
-							"value": "Kestrel"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
+							"id": "1621e78b-7823-4893-ab59-c0e8a3e5a5ea",
+							"name": "update customer",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"FirstName\": \"San\",\r\n        \"LastName\": \"Diago\"\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{base_url}}/api/customer/00537897-da8a-48f2-b314-710fd8d270a7"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Mar 2023 20:57:23 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"FirstName\": \"San\",\n    \"LastName\": \"Diago\",\n    \"Email\": \"Johnny@gmail.com\",\n    \"Id\": \"00537897-da8a-48f2-b314-710fd8d270a7\",\n    \"Type\": \"Customer\"\n}"
 						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n    \"FirstName\": \"San\",\n    \"LastName\": \"Diago\",\n    \"Email\": \"Johnny@gmail.com\",\n    \"Id\": \"00537897-da8a-48f2-b314-710fd8d270a7\",\n    \"Type\": \"Customer\"\n}"
+					]
 				}
-			]
+			],
+			"id": "1cdf2692-507b-4b98-bc48-ba7ae8d326d5"
 		}
 	]
 }
