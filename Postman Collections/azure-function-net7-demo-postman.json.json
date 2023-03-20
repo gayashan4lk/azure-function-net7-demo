@@ -365,7 +365,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{base_url}}/api/customer/3f9950c3-764e-4fe3-9422-21afac1ecb7c",
+						"url": "{{base_url}}/api/customer/7c6493ed-6e60-4547-9a59-3d64fa42faf7",
 						"description": "Delete a customer  \n\napi/customer/{id}"
 					},
 					"response": [
