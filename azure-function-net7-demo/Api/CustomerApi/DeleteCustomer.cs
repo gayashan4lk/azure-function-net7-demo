@@ -15,7 +15,7 @@ namespace azure_function_net7_demo.Api.CustomerApi
 
         public DeleteCustomer(ILoggerFactory loggerFactory, IRepository<Customer> customerRepository)
         {
-            _logger = loggerFactory.CreateLogger<MyCreateCustomer>();
+            _logger = loggerFactory.CreateLogger<CreateCustomer>();
             this.customerRepository = customerRepository;
         }
 
