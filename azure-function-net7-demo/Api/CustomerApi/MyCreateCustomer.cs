@@ -8,14 +8,14 @@ using Microsoft.Extensions.Logging;
 
 namespace azure_function_net7_demo.Api.CustomerApi
 {
-    public class CreateCustomer
+    public class MyCreateCustomer
     {
         private readonly ILogger _logger;
         private readonly IRepository<Customer> customerRepository;
 
-        public CreateCustomer(ILoggerFactory loggerFactory, IRepository<Customer> customerRepository)
+        public MyCreateCustomer(ILoggerFactory loggerFactory, IRepository<Customer> customerRepository)
         {
-            _logger = loggerFactory.CreateLogger<CreateCustomer>();
+            _logger = loggerFactory.CreateLogger<MyCreateCustomer>();
             this.customerRepository = customerRepository;
         }
 
