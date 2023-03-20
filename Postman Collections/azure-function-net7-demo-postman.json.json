@@ -214,16 +214,10 @@
 					},
 					"request": {
 						"method": "POST",
-						"header": [
-							{
-								"key": "x-functions-key",
-								"value": "6eUgs4Qujuv_W3eHitECD9wvGTrvYHM58oBQw82gG3MLAzFuNZqNIA==",
-								"type": "text"
-							}
-						],
+						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"FirstName\": \"Harry\",\r\n    \"LastName\": \"Potter\",\r\n    \"Email\": \"Harry@gmail.com\"\r\n}",
+							"raw": "{\r\n    \"FirstName\": \"Test\",\r\n    \"LastName\": \"Test\",\r\n    \"Email\": \"test@gmail.com\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
